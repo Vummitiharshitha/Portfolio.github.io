@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Proposed system page</title>
+    <style>
+        body{
+            background-color: #FFF0F5;
+        }
+        h1{
+            color: #974EC3;
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        h2{
+            color: #900C3F;
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        pre{
+            color: #18c99f;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: justify;
+        }
+        h3{
+            color: #6217be;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p{
+            color: #765827;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Proposed System</h1>
+    <h2>Proposed System</h2>
+    <pre>In our proposed work, we are implementing a method that which will able to recognize the faces by using deep learning-based CNN model. Here we are collecting the dataset of different faces. Once after preprocessing it we train the data with the CNN algorithm. After training, we will test the results using the OpenCV and also can upload the image for recognition of faces.
+In this neural network, X1, X2, X3 are the input of the neural network. +1 is the offset node, also known as the intercept term. The leftmost column of this neural network model is the input layer of the neural network, the rightmost column of which is the output layer of the neural network. The middle layer of the network model is a hidden layer, which is fully connected between the input layer and the output layer. The values of all the nodes in the network model cannot be seen in the training sample set. By observing this neural network model, we can see that the model contains a total of 3 input units, 3 hidden units and 1 output unit. Now, use nl to represent the number of layers in the neural network, and the number of layers in this neural network is 3. Now mark each layer, the first layer can be expressed by Ll, then the output layer of the neural network L1, its output layer is Lnl, in this neural network, the follo3wing parameters exist:is the connection parameter between the jth cell of layer 1 and the i th cell of layer l+1, and bi l is the offset of the i th cell of layer 1+1. In this neural network model, set ai (l) to represent the output value of the first few cells in this layer. Let l denote this layer and i the first few cells in this layer. 3 1234567890 ‘’“” 2nd International Symposium on Resource Exploration and Environmental Science IOP Publishing IOP Conf. Series: Earth and Environmental Science 170 (2018) 032110 doi :10.1088/1755-1315/170/3/032110 Given that the set of parameters W and b have been given, we can use the formula hw,b(x) to calculate the output of this neural network. The calculation of forward propagation is as shown in equation.Neural network training methods and Logistic regression model is similar, but due to the multi-layered neural network, but also the need for gradient descent + chain derivation rule. 3. CNN Model Construction and Training 3.1. CNN model At present, the typical architecture of neural network is divided into the following categories: LeNet5, AlexNet, ZF Net, GooLeNet, and VGGNet, the following will LeNet5 architecture for a detailed analysis. LeNet5 is a CNN classic structure that existed long ago, and it is mainly used in the recognition of handwritten fonts.
+It contains a total of seven layers of structure, except for the input layer, each of the other has training parameters, and each layer contains a plurality of Feature Maps, we can extract the input features through a convolution kernel.
+</pre>
+<h2>Block Diagram With Discription</h2>
+<center>
+<img src="block.jpg"><br>
+<p>Block Diagram of Facial Expression Recognition</p>
+</center>
+<h3><u>Feature Extraction:</u></h3>
+<pre>In real-time facial expression recognition using Convolution Neural Network (CNN), feature extraction is the process of identifying and extracting relevant features from the input images of human faces that can be used to classify the facial expression.
+The features extracted from the input images are typically a set of numerical values that represent specific characteristics of the image, such as the presence of certain facial features or the overall texture and color distribution of the face.In CNN-based facial expression recognition system, feature extraction is often performed by applying a series of convolutional and pooling layer to the input images. These layers help to identify and extract patterns and features from the images that are relevant for facial expression recognition.Once the feature have been extracted from the input images, they are typically fed into a classification layer, such as a fully connected layer, which uses the extracted features to classify the facial expression. Overall, feature extraction is a critical component of real- time facial expression recognition using CNN, as it plays a key role in identifying and extracting the most relevant information from the input images for accurate and efficient classification.
+</pre>
+<h3><u>Preprocessing:</u></h3>
+<pre>In real-time facial expression recognition using Convolutional Neural Network (CNN), preprocessing refers to the set of techniques used to prepare the input images of human faces for feature extraction and classification.
+
+    Preprocessing typically involves a series of steps, including:
+    
+    1.Image acquisition: Capturing high-quality images of human faces is essential for accurate facial expression recognition. Preprocessing begins with acquiring images of faces using a camera or video feed.
+    2.Image normalization: Since the images captured may have varying lighting conditions and orientations, they need to be normalized by adjusting.
+    3.The brightness, contrast, and color balance. This step helps to ensure that the facial features are easily recognizable and consistent across different images.
+    4.Image resizing: The images are then resized to a standard size to ensure that the CNN model is able to process them efficiently.
+    5.Face detection and alignment: The next step involves detecting the face in the image and aligning it to a standard position. This step ensure that the facial featureare in the same location and orientation for all images, making it easier to extract the features for classification.
+    6.Image augmentation: To improve the generalization ability of the CNN model and reduce overfitting, image augmentation techniques such as rotation, scaling, and flipping are applied to generate additional training samples.
+Overall, preprocessing is an important step in real-time facial expression recognition using CNN as it helps to enhance the quality of input images, making them suitable for feature extraction and classification.
+</pre>
+<h3><u>Convolutional Neural Network:</u></h3>
+<h4>Step1: convolutional operation</h4>
+<pre>The first building block in our plan of attack is convolution operation. In this step, we will touch on feature detectors, which basically serve as the neural network's filters. We will also discuss feature maps, learning the parameters of such maps, how patterns are detected, the layers of detection, and how the findings are mapped out.</pre>
+<h4>Step (1b): Relu Layer</h4>
+<pre>The second part of this step will involve the Rectified Linear Unit or Relook. We will cover Relook layers and explore how linearity functions in the context of Convolutional Neural Networks.
+Not necessary for understanding CNNs, but there's no harm in a quick lesson to improve your skills.
+</pre>
+<h4>Step 2: Pooling Layer</h4>
+<pre>In this part, we'll cover pooling and will get to understand exactly how it generally works. Our nexus here, however, will be a specific type of pooling; max pooling. We'll cover various approaches, though, including mean (or sum) pooling. This part will end with a demonstration made using a visual interactive tool that will definitely sort the whole concept out for you.</pre>
+<h4>Step 3: Flattening</h4>
+<pre>This will be a brief breakdown of the flattening process and how we move from pooled to flattened layers when working with Convolutional Neural Networks.</pre>
+<h4>Step 4: Full Connection</h4>
+<pre>In this part, everything that we covered throughout the section will be merged together. By learning this, you'll get to envision a fuller picture of how Convolutional Neural Networks operate and how the "neurons" that are finally produced learn the classification of images.</pre>
+<h3><u>Testing:</u></h3>
+<pre>Testing in real-time facial expression recognition using CNN involves several steps:
+    1.Data collection: Collect a dataset of facial images with different expressions. The dataset should contain a sufficient number of images for each expression to train the model effectively.
+    2.Data preprocessing: Preprocess the dataset by resizing images, converting them to grayscale, and normalizing the pixel values. This helps to reduce the variability in the dataset and improve the accuracy of the model.
+    3.Model building: Build a Convolutional Neural Network (CNN) model to recognize facial expressions. The model should have several convolutional and pooling layers to extract features from the images, followed by fully connected layers to classify the expression.
+    4.Training the model: Train the CNN model using the preprocessed dataset. The model should be trained with a suitable loss function and optimizer to minimize the error rate.
+    5.Real-time testing: Once the mode, is trained, it can be tested in real-time by feeding the model with live video streams. The model can be used to predict the expression of the person in real-time.
+    6.Evaluation: Evaluate the performance of the model using different metrics such as accuracy, precision, recall, and F1 score.
+    7.Improvement: If the model performance is not satisfactory, make improvements by adjusting the model architecture or hyperparameters and retraining the model until the desired level of accuracy is achieved.
+In summary, testing in real-time facial expression recognition using CNN requires collecting a dataset, preprocessing the data, building and training a CNN model, testing the model in real-time, evaluating the model’s performance, and making improvements as needed.
+</pre>
+<h3><u>Input Image:</u></h3>
+<pre>To fix the input image for real-time facial expression recognition using CNN, you need to preprocess the input image before feeding it into the CNN model. Here are some steps you can follow:
+    1.Resize the image: Resize the input image to a fixed size that the CNN model can handle. The size of the image can vary depending on the CNN model architecture, but typically the input image size is set to (48, 48) or (64, 64) pixels.
+    2.Convert to grayscale: Convert the input image to grayscale to reduce the computational complexity and to remove the color information, which is not relevant for facial expression recognition.
+    3.Normalize pixel values: Normalize the pixel values of the input image by subtracting the mean pixel value and dividing by the standard deviation. This helps to improve the convergence rate during training and testing.
+    4.Expand dimensions: Expand the dimensions of the input image to match the input shape of the CNN model. The CNN model expects a 4D tensor as input, with dimensions (batch-size, height, width, channels). Since we are processing a single image, the batch size will be 1.
+    Here is some sample code in Python using the OpenCV library to preprocess an input image for real-time facial expression recognition using CNN:
+    After preprocessing the input image, you can feed it into the CNN model to predict the facial expression in real-time.
+</pre>
+<h3><u>Video Streaming:</u></h3>
+<pre>To do video streaming in real-time facial expression recognition using CNN, you need to capture the video frames from the camera, preprocess each frame, and feed it into the CNN model to predict the facial expression. Here are some steps you can follow:
+    1.Capture video frames: Use a video capture object to capture the frames from the camera. You can use the OpenCV library in Python to capture frames from the camera.
+    2.Preprocess each frame: Preprocess each frame by resizing, converting to grayscale, normalizing pixel values, and expanding dimensions, similar to the steps we followed for preprocessing a single image.
+    3.Feed frames into CNN model: Feed each preprocessed frame into the CNN model to predict the facial expression. The output of the model will be the probability distribution of the different facial expressions.
+    4.Display the output: Display the original frame with the predicted expression. You can use the cv2.putText() function to overlay the predicted expression on the frame.
+    In summary, to do video streaming in real-time facial expression recognition using CNN, you need to capture video frames, preprocess each frame, feed frames into the CNN model, and display the output. You can use the OpenCV library in Python to perform these tasks.
+</pre>
+<h3><u>Face Recognition:</u></h3>
+<pre>To do face recognition in real-time facial expression recognition using CNN, you need to detect faces in each video frame, crop the face region, preprocess the face image, and feed it into the CNN model to predict the facial expression. Here are some steps you can follow:
+   1.Detect faces: Use a face detection algorithm to detect faces in each video frame. You can use the OpenCV library in Python to detect faces using the Haar Cascade classifier.
+   2.Preprocess face image: Preprocess each face image by resizing, converting to grayscale, normalizing pixel values, and expanding dimensions, similar to the steps we followed for preprocessing a single image.
+   3.Feed face images into CNN model: Feed each preprocessed face image into the CNN model to predict the facial expression. The output of the model will be the probability distribution of the different facial expressions.
+</pre>
+
+</body>
+</html>

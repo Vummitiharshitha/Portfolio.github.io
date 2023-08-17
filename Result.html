@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Result and Discussion</title>
+    <style>
+        body{
+            background-color: #FFF0F5;
+        }
+        h1{
+            color: #65451F;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        pre{
+            color: #61677A;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: justify;
+        }
+        h2{
+            color: #bdbd11;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        table{
+            border: #30112e;
+        }
+        th{
+            color: #cc136f;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        td{
+            color: #0B666A;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        p{
+            color: #1645e0;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result and Discussion</h1>
+    <pre>The results and discussion for real-time facial expression recognition using CNN depend on the specific dataset, architecture, hyperparameters, and evaluation metrics used in the experiment. Here are some possible results and discussion points:
+        1.Dataset: The choice of dataset affects the performance of the facial expression recognition system. Common datasets include FER2013, CK+, and JAFFE. The system's accuracy and generalization ability can be evaluated using metrics such as precision, recall, F1 score, and confusion matrix.
+        2.CNN architecture: The architecture of the CNN model affects the accuracy, computational efficiency, and real-time performance of the system. Popular architectures include VGGNet, ResNet, and Inception. The number of layers, filter size, and pooling strategies can be tuned to optimize the performance.
+        3.Hyperparameters: The hyperparameters of the CNN model affect the training process and performance of the system. The learning rate, batch size, and regularization strength can be tuned using techniques such as grid search or random search.
+        4.Real-time performance: The real-time performance of the facial expression recognition system is a critical factor for practical applications. The latency, frames per second, and memory usage can be evaluated to determine the system's efficiency and feasibility.
+        5.Discussion: The discussion of the results should address the strengths, limitations, and potential future directions of the facial expression recognition system. The system's accuracy, real-time performance, and generalization ability can be compared with other state-of-the-art methods. The limitations of the dataset, architecture, and hyperparameters should be acknowledged. Potential future directions include improving the accuracy and efficiency of the system, expanding the dataset to include more diverse facial expressions and conditions, and exploring the use of other deep learning models such as recurrent neural networks and attention mechanisms.
+    </pre>
+    <h2><u>Table Cases</u></h2>
+   <table border="1">
+    <tr>
+        <tr>
+            <th>S.No</th>
+            <th>Test Cases</th>
+            <th>I/O</th>
+            <th>Expected O/T</th>
+            <th>Actual O/T</th>
+            <th>Pass/Fail</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Read the dataset</td>
+            <td>Dataset path</td>
+            <td>Dataset need to read successfully</td>
+            <td>Dataset fetched successfully</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Performing pre- processing on the dataset</td>
+            <td>Pre- processing part	takes place</td>
+            <td>Pre- processing should be performed on dataset</td>
+            <td>Pre-processing successfully completed.</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Model Building</td>
+            <td>Model Building for the	clean data</td>
+            <td>Need to create model using required algorithms</td>
+            <td>Model Created Successfully</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Face recognition</td>
+            <td>Video streaming or image upload</td>
+            <td>Face recognized successfully</td>
+            <td>Model recognize the face image successfully</td>
+            <td>Pass</td>
+        </tr>
+    </tr>
+   </table> <br>
+   <p>Test Case Model Building</p>
+   <pre>In general, the results and discussion for real-time facial expression recognition using CNN should demonstrate the effectiveness and feasibility of the system for practical applications. The system should achieve high accuracy, real-time performance, and generalization ability while addressing the limitations and potential future directions of the field.
+In this Project, By using Pycharm we developed the code for the Real-Time Facial Expression Recognition using CNN successfully.We developed a web page to upload images and Live prediction by using Flask Application.
+Finally we successfully predicted the images and Live prediction including audio by using Mobilenet Model, RestNet50 And VGG16 Model.
+In this Proposed system we are getting 85% accuracy for image based and live prediction.
+</pre>
+<center>
+<img src="code.jpg"><br>
+<p>Source Code</p>
+<img src="pridect.jpg">
+<img src="result.png" height="350px"><br>
+<p>Result of Image</p>
+<img src="live1.jpg"><br>
+<p>Result of Live Prediction 1</p>
+<img src="live2.jpg" width="500px" height="500px"><br>
+<p>Result of Live Prediction 2</p>
+</center>
+</body>
+</html>
